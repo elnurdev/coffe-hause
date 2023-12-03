@@ -1,0 +1,114 @@
+.main {
+  padding: 100px 0;
+}
+.main .main-title {
+  max-width: 850px;
+  margin: 0 auto 0px auto;
+  text-align: center;
+}
+.main .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+.main .tabs .tab-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #C1B6AD;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.main .tabs .tab-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #C1B6AD;
+  border-radius: 100px;
+}
+.main .tabs .tab-item:hover {
+  background: #665F55;
+  border: 1px solid #665F55;
+}
+.main .tabs .active {
+  background: #665F55;
+  border: 1px solid #665F55;
+}
+.main .main-body {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 40px;
+}
+.main .main-body .card-block {
+  height: 506px;
+  border-radius: 40px;
+  border: 1px solid #C1B6AD;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.main .main-body .card-block .card-img {
+  width: 310px;
+  height: 310px;
+  overflow: hidden;
+}
+.main .main-body .card-block .card-img img {
+  transition: all 0.3s ease-out;
+}
+.main .main-body .card-block img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main-body .card-block .card-offer {
+  width: 250px;
+  padding: 20px 0 20px 20px;
+}
+.main .main-body .card-block .card-offer .card-subtitle {
+  margin: 12px 0 0px 0;
+}
+.main .main-body .card-block .card-offer .price {
+  position: absolute;
+  bottom: 20px;
+}
+.main .main-body .card-block:hover img {
+  width: 350px;
+  height: 350px;
+  margin: 0px 0 0 -20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .main-title {
+    max-width: 680px;
+  }
+  .main .main-body {
+    grid-template-columns: auto auto;
+  }
+  .main .main-body .card-block {
+    width: 310px;
+  }
+  .main .main-body .card-block:nth-child(5) {
+    display: none;
+  }
+  .main .main-body .card-block:nth-child(6) {
+    display: none;
+  }
+  .main .main-body .card-block:nth-child(7) {
+    display: none;
+  }
+  .main .main-body .card-block:nth-child(8) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main .main-body {
+    grid-template-columns: auto;
+    gap: 0;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
